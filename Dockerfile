@@ -1,7 +1,5 @@
-# Base image
-FROM ubuntu: latest
+FROM openjdk:11-jre-slim
 WORKDIR /app
-RUN sudo apt install java
-COPY . .
-EXPOSE 5000
-CMD ["javac", "HelloWorld.java"]
+COPY ./HelloWorld.java .
+RUN javac HelloWorld.java
+CMD ["java", "HelloWorld"]

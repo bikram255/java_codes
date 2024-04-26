@@ -1,5 +1,5 @@
 # Base image
-FROM ubuntu:16
+FROM ubuntu: 24.04
 
 # Set the working directory inside the container
 WORKDIR /app

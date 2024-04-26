@@ -1,5 +1,5 @@
 # Base image
-FROM ubuntu: 24.04
+FROM ubuntu: latest
 WORKDIR /app
 RUN sudo apt install java
 COPY . .
